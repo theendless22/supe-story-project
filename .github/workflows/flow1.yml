@@ -23,6 +23,6 @@ jobs:
       - uses: pre-commit/action@v3.0.0
       - name: re-commit
         if: steps.pre-commit.outputs.exit-code == 1
-        runs: |
+        run: |
           git commit -am "automated changes added"
           git push
