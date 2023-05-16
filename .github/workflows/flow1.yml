@@ -22,7 +22,7 @@ jobs:
       - uses: actions/setup-python@v3
       - uses: pre-commit/action@v3.0.0
       - name: re-commit
-        if: steps.pre-commit.outputs.exit-code == 1
+        if: steps.pre-commit.outputs.exit-code == 2
         run: |
           git commit -am "automated changes added"
           git push
