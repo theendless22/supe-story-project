@@ -6,7 +6,7 @@ name: pre-commit
 on:
   # Triggers the workflow on push to any branch
   push:
-  pull-request:
+  pull_request:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
