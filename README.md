@@ -1,3 +1,2 @@
-# cloud-things
-1.learning to integrate public cloud with github and using IAC tools to provision infrastructure.
-2.GHA demo
+# Understanding the use of Git hub actions in building a pipeline 
+
