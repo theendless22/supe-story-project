@@ -40,6 +40,8 @@ print("lets generate your random super hero name!")
 
 superName = random.choice(superFirstName) + random.choice(superLastName)
 
+# this is the super hero segment
+
 print("your super-name is!")
 print(superName)
 print("your super power is:")
