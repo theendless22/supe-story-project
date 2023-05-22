@@ -4,5 +4,5 @@ GHA can be enabled on any _public_ repository by creating a `.github/workflows` 
 - flow1 : This is a linting action
 - flow2 : This action automagically auot-commits and pushes any changes after flow1 completes
 
-#combining flow 1 and 2 
+#combining flow 1 and 2
 #trying both again
