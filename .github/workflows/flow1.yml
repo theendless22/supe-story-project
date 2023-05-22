@@ -25,11 +25,11 @@ jobs:
 
   commit:
     runs-on: ubuntu-latest
+    needs: format
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Commit
-        needs: format
         if: steps.pre-commit.outputs.changes_detected == 'true'
         #if: steps.git-check.outputs.modified == 'true'
         uses: stefanzweifel/git-auto-commit-action@v4
