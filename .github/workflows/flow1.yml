@@ -23,20 +23,15 @@ jobs:
       - name: pre-commit
         uses: pre-commit/action@v3.0.0
 
-  commit:
+  pull-request:
     runs-on: ubuntu-latest
-    if: ${{ always() }}
     needs: format
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Commit
-        if: steps.pre-commit.outputs.changes_detected == 'true'
-        #if: steps.git-check.outputs.modified == 'true'
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit-message: Automated changes
-
+      - name: Create-pull-request
+        uses: actions/checkout@v3
+        uses: peter-evans/create-pull-request@v5
 
 
 
