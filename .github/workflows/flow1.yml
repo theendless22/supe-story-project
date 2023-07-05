@@ -1,6 +1,6 @@
-# This is a basic workflow to auto-create a PR on push
+# This is a basic workflow
 
-name: pre-commit
+name: actions
 
 # Controls when the workflow will run
 on:
