@@ -51,4 +51,7 @@ print(random.choice(superPowers))
 
 villan_first_name = [
     "Dark",
+    "Blue",
+    "Unhappy",
+    "Lifeless",
 ]
