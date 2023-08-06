@@ -29,10 +29,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          ref: pr-branch
       - name: Expose git commit data
         uses: rlespinasse/git-commit-data-action@v1
+      - name: Reset promotion branch
+        run: |
+          git fetch origin main:main
+          git reset --hard main
       - name: Create pull request
         uses: peter-evans/create-pull-request@v5
         with:
           commit-message: "PR raised for changes"
           labels: "automated pr"
+          branch: pr-branch-promotion

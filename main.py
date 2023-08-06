@@ -54,4 +54,27 @@ villan_first_name = [
     "Blue",
     "Unhappy",
     "Lifeless",
+    "White",
+    "Unplanned",
+    "Rich",
+    "Psycotic",
 ]
+
+villan_last_name = [
+    "Fly",
+    "Engineer",
+    "Pilot",
+    "Bitch",
+    "Freak",
+    "Student",
+    "Manager",
+    "Builder",
+    "Politician",
+]
+
+villainName = superName = random.choice(villan_first_name) + random.choice(
+    villan_last_name
+)
+
+print("your arch nemesis is :O ")
+print(villainName)
