@@ -8,7 +8,10 @@ superPowers = [
     "Super Speed",
     "Unlimited Eating capability",
     "Invisibility",
+    "Fire-breath",
+    "Ice-breath",
 ]
+
 superFirstName = [
     "Wonder",
     "Super",
@@ -47,7 +50,18 @@ print(superName)
 print("your super power is:")
 print(random.choice(superPowers))
 
-# TO DO: Add super villains to this code ex
+# TO DO: Add super villains to this code
+
+villainPowers = [
+    "Flying",
+    "Super Strength",
+    "Telepathy",
+    "Super Speed",
+    "Unlimited Eating capability",
+    "Invisibility",
+    "Fire-breath",
+    "Ice-breath",
+]
 
 villan_first_name = [
     "Dark",
@@ -78,3 +92,5 @@ villainName = superName = random.choice(villan_first_name) + random.choice(
 
 print("your arch nemesis is :O ")
 print(villainName)
+print("your arch nemisis power is:")
+print(random.choice(villainPowers))
