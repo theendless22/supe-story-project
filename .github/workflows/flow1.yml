@@ -36,5 +36,4 @@ jobs:
         with:
           commit-message: "PR raised for changes"
           labels: "automated pr"
-          branch: pre-deploy-branch
           create: True
