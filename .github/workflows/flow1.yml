@@ -26,9 +26,13 @@ jobs:
   auto-pull-request:
     name: PullRequestAction
     runs-on: ubuntu-latest
+    needs: format
     steps:
       - name: pull-request-action
         uses: vsoch/pull-request-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PULL_REQUEST_UPDATE: "True"
           PULL_REQUEST_BRANCH: "deploy"
+          PULL_REQUEST_TITLE: "This is an AUTO PR; generated because you're lazy"
+          PULL_REQUEST_BODY: "The Justice league has approved this PR"
