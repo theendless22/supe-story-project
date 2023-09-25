@@ -1,5 +1,7 @@
-# Create your superhero name
+# Create your superhero vs villain story
 import random
+
+# this is the super hero segment
 
 superPowers = [
     "Flying",
@@ -18,7 +20,7 @@ superFirstName = [
     "Decent",
     "Stupendous",
     "Organised",
-    "That Guy",
+    "That",
     "Notably",
 ]
 superLastName = [
@@ -34,20 +36,28 @@ superLastName = [
     "Deepika",
     "Macho Lady",
     "Stag",
+    "Guy",
 ]
 
 print("lets generate your random super hero name!")
 
 superName = random.choice(superFirstName) + random.choice(superLastName)
 
-# this is the super hero segment
-
 print("your super-name is!")
 print(superName)
 print("your super power is:")
 print(random.choice(superPowers))
 
-# TO DO: Add super villains to this code ex
+# This is super villains segment
+
+villainPowers = [
+    "Flying",
+    "Super Strength",
+    "Telepathy",
+    "Super Speed",
+    "Unlimited Eating capability",
+    "Invisibility",
+]
 
 villan_first_name = [
     "Dark",
@@ -58,6 +68,8 @@ villan_first_name = [
     "Unplanned",
     "Rich",
     "Psycotic",
+    "Trvial",
+    "Nutty",
 ]
 
 villan_last_name = [
@@ -70,6 +82,7 @@ villan_last_name = [
     "Manager",
     "Builder",
     "Politician",
+    "Cricketer",
 ]
 
 villainName = superName = random.choice(villan_first_name) + random.choice(
@@ -78,3 +91,5 @@ villainName = superName = random.choice(villan_first_name) + random.choice(
 
 print("your arch nemesis is :O ")
 print(villainName)
+print("your nemis has the power of:")
+print(villainPowers)
