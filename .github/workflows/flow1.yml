@@ -28,8 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: format
     steps:
-      - run: docker image build -t superhero:latest
-        with: 'dockerfile'
+      - run: docker image build -t superhero:latest dockerfile
 
 
   auto-pull-request:
