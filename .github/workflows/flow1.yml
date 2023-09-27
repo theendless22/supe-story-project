@@ -35,7 +35,7 @@ jobs:
   auto-pull-request:
     name: PullRequestAction
     runs-on: ubuntu-latest
-    needs: dockerfilerun
+    needs: docker_image_create
     steps:
       - name: pull-request-action
         uses: vsoch/pull-request-action@master
