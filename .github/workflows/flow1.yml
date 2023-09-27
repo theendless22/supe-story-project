@@ -23,13 +23,13 @@ jobs:
       - name: pre-commit
         uses: pre-commit/action@v3.0.0
 
-  dockerfilerun:
-    name: RunDockerfile
+  docker_image_create:
+    name: Build Docker Image
     runs-on: ubuntu-latest
     needs: format
     steps:
-      - uses: 'docker'
-        image: 'Dockerfile'
+      - run: docker image build -t superhero:latest
+        working-directory: /supe-story-project/dockerfile
 
 
   auto-pull-request:
