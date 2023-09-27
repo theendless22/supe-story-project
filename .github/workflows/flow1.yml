@@ -23,10 +23,19 @@ jobs:
       - name: pre-commit
         uses: pre-commit/action@v3.0.0
 
+  dockerfilerun:
+    name: RunDockerfile
+    runs-on: ubuntu-latest
+    needs: format
+    steps:
+      - uses: 'docker'
+        image: 'Dockerfile'
+
+
   auto-pull-request:
     name: PullRequestAction
     runs-on: ubuntu-latest
-    needs: format
+    needs: dockerfilerun
     steps:
       - name: pull-request-action
         uses: vsoch/pull-request-action@master
