@@ -29,7 +29,7 @@ jobs:
     needs: format
     steps:
       - run: docker image build -t superhero:latest
-        uses: 'dockerfile'
+        with: 'dockerfile'
 
 
   auto-pull-request:
