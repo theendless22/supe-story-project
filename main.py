@@ -91,5 +91,5 @@ villainName = superName = random.choice(villan_first_name) + random.choice(
 
 print("your arch nemesis is :O ")
 print(villainName)
-print("your nemis has the power of:")
-print(villainPowers)
+print("your nemesis has the power of:")
+print(random.choice(villainPowers))
