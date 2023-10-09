@@ -10,6 +10,7 @@ superPowers = [
     "Super Speed",
     "Unlimited Eating capability",
     "Invisibility",
+    "Ice breath",
 ]
 superFirstName = [
     "Wonder",
@@ -57,6 +58,7 @@ villainPowers = [
     "Super Speed",
     "Unlimited Eating capability",
     "Invisibility",
+    "Ice breath",
 ]
 
 villan_first_name = [
@@ -91,5 +93,5 @@ villainName = superName = random.choice(villan_first_name) + random.choice(
 
 print("your arch nemesis is :O ")
 print(villainName)
-print("your nemis has the power of:")
-print(villainPowers)
+print("your nemesis has the power of:")
+print(random.choice(villainPowers))
