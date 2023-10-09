@@ -10,6 +10,7 @@ superPowers = [
     "Super Speed",
     "Unlimited Eating capability",
     "Invisibility",
+    "Ice breath",
 ]
 superFirstName = [
     "Wonder",
@@ -57,6 +58,7 @@ villainPowers = [
     "Super Speed",
     "Unlimited Eating capability",
     "Invisibility",
+    "Ice breath",
 ]
 
 villan_first_name = [
