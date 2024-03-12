@@ -102,3 +102,31 @@ def gerenate_super_villain():
     # print(villainName)
     # print("your nemesis has the power of:")
     # print(random.choice(villainPowers))
+
+
+def click_to_generate():
+    superhero_info = generate_superhero()
+    villain_info = gerenate_super_villain()
+
+    output_text.set(superhero_info + "\n\n" + villain_info)
+
+
+# main application
+app = tk.Tk()
+app.title("Superhero vs SuperVillain")
+
+# create widgets
+output_text = tk.StringVar()
+output_label = tk.Label(
+    app, textvariable=output_text, font=("ComicSans", 14), wraplength=600
+)
+button = tk.Button(
+    app, text="Generate Super Hero & Villain Info!", command=click_to_generate
+)
+
+# Place widgets in the window
+output_label.pack(pady=60)
+button.pack(pady=20, anchor="center", side="top")
+
+# start the gui
+app.mainloop()
