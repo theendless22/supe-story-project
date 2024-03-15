@@ -8,6 +8,7 @@ WORKDIR /supe-project/src
 COPY ./main.py /supe-project/src/
 
 RUN pip  install --upgrade pip && \
+    pip freeze > requirements.txt && \
     pip install -r requirements.txt
 
 CMD [ "python", "./main.py"]
